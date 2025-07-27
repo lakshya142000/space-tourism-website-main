@@ -43,7 +43,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://space-tourism-website-main-l8yn.vercel.app/)
+- Live Site URL: [Frontend Mentor | Space tourism website](https://space-tourism-website-main-l8yn.vercel.app/)
 
 
 ### Built with
