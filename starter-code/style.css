@@ -1,0 +1,288 @@
+.index-body{
+    background: url(assets/home/background-home-desktop.jpg);
+    font-family: bellefair;
+    margin: 0;
+    color: #ffffff;
+    background-size: cover;
+    background-position: center;
+
+}
+/* Navbar container */
+.navbar{
+    overflow: visible;
+    width: 100%;
+    height: 136px;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
+    align-items: center;
+    /* Defining font in parent container */
+    color: #ffffff;
+    font-size: 16px;
+    line-height: normal;
+}
+/* logo container  */
+.logo{
+    width: 50%;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    margin-left: 32px;
+    /* align-content: center; */
+    overflow: visible;
+}
+/* Line */
+.horizontal-line {
+    z-index: 2;
+    flex-grow: 1;
+    height: 1px;
+    background: #ffffff; 
+    margin-left: 64px;
+    margin-top: 24px;
+    opacity: 25%;
+}
+/* Direction button container */
+.nav-buttons{
+    backdrop-filter: blur(5px);
+   
+    background: rgba(255, 255, 255, 0.05);
+    width: 50%;
+    height: 96px;
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: -32px;
+    padding-right: 20px ;
+}
+.direction-a{
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 5px;
+}
+.nav-btn-container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: border-bottom ease-in;
+    cursor: pointer;
+}
+.nav-btn-container:hover{
+    border-bottom: 2px solid #ffffff50;
+}
+.nav-btn-container.active{
+    border-bottom: 2px solid #ffffff;
+}
+/* Index content */
+.index-content{
+    /* width: calc(100%-128px); */
+    height: 100%;
+    margin: 128px;
+    display:flex;
+    align-items: flex-end;
+    flex-direction: row;
+}
+.index-text{
+    width: 540px;
+}
+.index-subtitle{
+    font-size: 28px;
+    line-height: normal;
+    letter-spacing: 4px;
+    margin: 0;
+}
+.index-title{
+    font-size: 144px;
+    line-height: normal;
+    letter-spacing: 0px;
+    margin: 0;
+}
+.index-textcontent{
+    font-size: 18px;
+    line-height: 180%;
+    letter-spacing: 0px;
+    margin: 0;
+}
+.explore{
+    width: 540px;
+    display: flex;
+    justify-content: flex-end;
+}
+#circle-button {
+    width: 270px;
+    height: 270px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    line-height: normal;
+    letter-spacing: 0px;
+    color: #0B0D17;
+    cursor: pointer;
+}
+#circle-button:hover {
+    box-shadow: 0 0 0 60px rgba(255, 255, 255, 0.1);
+    color: #0b0d1780;   /*added opacity*/
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+#hamburger-btn{
+    display: none;
+}
+
+/* ----MOBILE SIDE NAV ---- */
+.mob-nav-buttons{
+    position: fixed;
+    top: 0;
+    right: 6px;
+    z-index: 2;
+    width: 67%;
+    height: 110vw;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: column;
+    float: right;
+    padding-left: 32px;
+    padding-top: 32px;
+    text-align: left;
+}
+#close-btn{
+    z-index: 2;
+    margin-left: 85%;
+    margin-bottom: 20%;
+}
+.mob-nav-container{
+    width: 100%;
+    margin-bottom: 32px;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+.mob-nav-container.active{
+    border-right: 4px solid #ffffff;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .index-body{
+        background: url(/starter-code/assets/home/background-home-tablet.jpg);
+        background-size: cover;
+        padding-top: 0;
+    }
+    .logo{
+        width: 160px;
+    }
+    .horizontal-line{
+        display: none;
+    }
+    .nav-buttons {
+        width: 100%;
+        justify-content: space-evenly;
+        margin-left: -15px;
+    }
+    .index-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .index-title{
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+    .index-textcontent{
+        text-align: center;
+    }
+    .explore{
+        justify-content: center;
+        margin-top: 20%;
+    }
+}
+
+@media (max-width: 767px) {
+    .index-body{
+        background: url(/starter-code/assets/home/background-home-mobile.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 24px;
+        /* padding-top: 0; */
+        width: 100%;
+    }
+    .navbar{
+        width: 100%;
+        height: 88px;
+        padding-right: 24px; ;
+    }
+    .logo{
+        width: 50%;
+        margin-left: 0;
+        margin-right: -10%;
+    }
+    .nav-buttons{
+        width: 50%;
+        background: none;
+        backdrop-filter: none;
+        justify-content: flex-end;
+        margin-left: auto;
+    }
+    .nav-btn-container{
+        display: none;
+     }
+     #hamburger-btn{
+    display: inline;
+    }
+    .horizontal-line{
+        display: none;
+    }
+    .index-content{
+        width: 90%;
+        height: auto;
+        margin: 24px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .index-text{
+        width: auto;
+        text-align: center;
+    }
+    .index-subtitle{
+        font-size: 16px;
+        line-height: normal;
+        letter-spacing: 15%;
+        margin: 0;
+        font-family: "Barlow Condensed";
+    }
+    .index-title{
+        margin-top: 24px;
+        margin-bottom: 24px;
+        font-size: 80px;
+        letter-spacing: 0px;
+    }
+    .index-textcontent{
+        text-align: center;
+        font-size: 15px;
+        font-family: "Barlow Condensed";
+    }
+    .explore{
+        justify-content: center;
+        margin-top: 30%;
+        height: 50%;
+
+    }
+    #circle-button{
+        width: 144px;
+        height: 144px;
+        font-size: 18px;
+    }
+}

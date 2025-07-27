@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="destination-style.css">
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body class="destination-body">
+  <nav class="navbar">
+    <div class="logo">
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd">
+      <circle cx="24" cy="24" r="24" fill="#FFF"/>
+      <path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/></g>
+    </svg>
+    <div class="horizontal-line"></div>
+    </div>
+    <div class="nav-buttons">
+      <div id="home-btn" class="nav-btn-container ">
+        <span style="font-weight: bold;">00</span>
+        <a class="direction-a ">HOME</a>
+      </div>
+      <div id="destination-btn" class="nav-btn-container active">
+        <span style="font-weight: bold;">01</span>
+        <a class="direction-a">DESTINATION</a>
+      </div>
+      <div id="crew-btn" class="nav-btn-container">
+        <span style="font-weight: bold;">02</span>
+        <a class="direction-a" >CREW</a>
+      </div>
+      <div id="technology-btn" class="nav-btn-container">
+        <span style="font-weight: bold;">03</span>
+        <a class="direction-a" >TECHNOLOGY</a>
+      </div>
+      <svg id="hamburger-btn" xmlns="http://www.w3.org/2000/svg" width="24" height="21">
+        <g fill="#D0D6F9" fill-rule="evenodd"><path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z"/></g>
+      </svg>
+    </div>
+  </nav>
+
+  <!-- Content  -->
+
+  <div class="destination-content">
+    <span class="num-text">01 </span><span class="upper-text">PICK YOUR DESTINATION</span>
+    <div class="destination-img-cont">
+      <picture class="destination-img">
+        <source srcset="./assets/destination/image-moon.webp" type="image/webp">
+        <img src="./assets/destination/image-moon.png" alt="Description of image">
+      </picture>
+      <div class="destination-cont">
+        <div class="destination-cont-directions">
+          <a class="direction-destination active" id="moon" >MOON</a>
+          <a class="direction-destination " id="mars" href="/starter-code/destination-mars.html">MARS</a>
+          <a class="direction-destination " id="europa" href="/starter-code/destination-europa.html">EUROPA</a>
+          <a class="direction-destination " id="titan" href="/starter-code/destination-titan.html">TITAN</a>
+        </div>
+
+        <div class="destination-cont-text">
+          <p class="destination-cont-text-heading">
+            MOON
+          </p>
+          <p class="destination-cont-text-description">
+            See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
+            regain perspective and come back refreshed. While you’re there, take in some history 
+            by visiting the Luna 2 and Apollo 11 landing sites.
+          </p>
+          <div class="destination-horizontal-line"></div>
+          <div class="destination-stats">
+            <div class="destination-stats-div">
+              <p class="destination-stats-heading">AVG. DISTANCE</p>
+              <p class="destination-stats-ans">384,400 KM</p>
+            </div>
+            <div class="destination-stats-div">
+              <p class="destination-stats-heading">EST. TRAVEL TIME</p>
+              <p class="destination-stats-ans">3 DAYS</p>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

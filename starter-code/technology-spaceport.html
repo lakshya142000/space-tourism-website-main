@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="destination-style.css">
+  
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+ 
+<body class="technology-body">
+  <nav class="navbar">
+    <div class="logo">
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd">
+      <circle cx="24" cy="24" r="24" fill="#FFF"/>
+      <path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/></g>
+    </svg>
+    <div class="horizontal-line"></div>
+    </div>
+    <div class="nav-buttons">
+      <div id="home-btn" class="nav-btn-container ">
+        <span style="font-weight: bold;">00</span>
+        <a class="direction-a " >HOME</a>
+      </div>
+      <div id="destination-btn" class="nav-btn-container ">
+        <span style="font-weight: bold;">01</span>
+        <a class="direction-a">DESTINATION</a>
+      </div>
+      <div id="crew-btn" class="nav-btn-container " >
+        <span style="font-weight: bold;">02</span>
+        <a class="direction-a" >CREW</a>
+      </div>
+      <div id="technology-btn" class="nav-btn-container active">
+        <span style="font-weight: bold;">03</span>
+        <a class="direction-a">TECHNOLOGY</a>
+      </div>
+      <svg id="hamburger-btn" xmlns="http://www.w3.org/2000/svg" width="24" height="21">
+        <g fill="#D0D6F9" fill-rule="evenodd"><path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z"/></g>
+      </svg>
+    </div>
+  </nav>
+  <!-- Content  -->
+
+  <div class="destination-content">
+    <span class="num-text">03 </span><span class="upper-text">SPACE LAUNCH 101</span>
+    <div class="technology-img-cont">
+      
+      <div class="technology-cont">
+         <div class="technology-cont-directions">
+          <a class="technology-direction " id="dh" href="/starter-code/technology-vehicle.html">1</a>
+          <a class="technology-direction active"  id="ms" href="/starter-code/technology-spaceport.html">2</a>
+          <a class="technology-direction " id="vg" href="/starter-code/technology-capsule.html">3</a>
+          
+        </div>
+        <div class="crew-cont-text">
+          <p class="crew-post-name">
+            THE TERMINOLOGY...
+          </p>
+          <P class="crew-name">SPACEPORT</P>
+          <p class="destination-cont-text-description">
+            A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, 
+            by analogy to the seaport for ships or airport for aircraft. Based in the 
+            famous Cape Canaveral, our spaceport is ideally situated to take advantage 
+            of the Earth’s rotation for launch.
+          </p>
+        </div>
+       
+      </div> 
+      <picture class="technology-img">
+        <!-- <source srcset="./assets/crew/image-anousheh-ansari.webp" type="image/webp"> 
+        class="crew-img-image" 
+        -->
+        <source media="(max-width: 1024px)" srcset="./assets/technology/image-spaceport-landscape.jpg" type="image/jpg">
+        <img  src="./assets/technology/image-spaceport-portrait.jpg" alt="SPACEPORT">
+      </picture> 
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
