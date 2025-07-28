@@ -8,14 +8,14 @@ home.addEventListener('click',()=>{
     if(home.classList.contains('active')){
         home.classList.remove('active')
     }else{
-        window.location.href = "/starter-code/index.html"
+        window.location.href = "index.html"
     }
 })
 destination.addEventListener('click',()=>{
     if(destination.classList.contains('active')){
         destination.classList.remove('active')
     }else{
-        window.location.href = "/starter-code/destination-moon.html"
+        window.location.href = "destination-moon.html"
     }
     
 })
@@ -23,7 +23,7 @@ crew.addEventListener('click',()=>{
     if(crew.classList.contains('active')){
         crew.classList.remove('active')
     }else{
-        window.location.href = "/starter-code/crew-commander.html"
+        window.location.href = "crew-commander.html"
     }
     
 })
@@ -31,14 +31,14 @@ technology.addEventListener('click',()=>{
     if(technology.classList.contains('active')){
         technology.classList.remove('active')
     }else{
-        window.location.href = "/starter-code/technology-vehicle.html"
+        window.location.href = "technology-vehicle.html"
     }
     
 })
 
 if(explore){
     explore.addEventListener('click',()=>{
-    window.location.href ='/starter-code/destination-moon.html' 
+    window.location.href ='destination-moon.html' 
 })
 }
 
@@ -116,7 +116,7 @@ function activeLink(){
    
     const address = window.location.href
     if(address.includes('index')){
-        mobHome.classList.add(' ')
+        mobHome.classList.add('active')
     }
     else if(address.includes('destination')){
         mobDestination.classList.add('active')
@@ -131,14 +131,14 @@ function activeLink(){
         if(home.classList.contains('active')){
             home.classList.remove('active')
         }else{
-            window.location.href = "/starter-code/index.html"
+            window.location.href = "index.html"
         }
     })
     mobDestination.addEventListener('click',()=>{
         if(destination.classList.contains('active')){
             destination.classList.remove('active')
         }else{
-            window.location.href = "/starter-code/destination-moon.html"
+            window.location.href = "destination-moon.html"
         }
         
     })
@@ -146,7 +146,7 @@ function activeLink(){
         if(crew.classList.contains('active')){
             crew.classList.remove('active')
         }else{
-            window.location.href = "/starter-code/crew-commander.html"
+            window.location.href = "crew-commander.html"
         }
         
     })
@@ -154,7 +154,7 @@ function activeLink(){
         if(technology.classList.contains('active')){
             technology.classList.remove('active')
         }else{
-            window.location.href = "/starter-code/technology-vehicle.html"
+            window.location.href = "technology-vehicle.html"
         }
         
     })

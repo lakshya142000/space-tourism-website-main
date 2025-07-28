@@ -1,5 +1,5 @@
 .destination-body{
-    background: url(/starter-code/assets/destination/background-destination-desktop.jpg);
+    background: url(assets/destination/background-destination-desktop.jpg);
     font-family: bellefair;
     margin: 0;
     color: #ffffff;
@@ -113,7 +113,7 @@
 /* --------CREW STYLES--------- */
 
 .crew-body{
-    background: url(/starter-code/assets/crew/background-crew-desktop.jpg);
+    background: url(assets/crew/background-crew-desktop.jpg);
     font-family: bellefair;
     margin: 0;
     color: #ffffff;
@@ -179,7 +179,7 @@
 /*------ Technology ------- */
 
 .technology-body{
-    background: url(/starter-code/assets/technology/background-technology-desktop.jpg);
+    background: url(assets/technology/background-technology-desktop.jpg);
     font-family: bellefair;
     margin: 0;
     color: #ffffff;
@@ -231,7 +231,7 @@
 }
 @media (min-width: 768px) and (max-width: 1024px) {
     .destination-body{
-        background: url(./assets/destination/background-destination-tablet.jpg);
+        background: url(assets/destination/background-destination-tablet.jpg);
         background-size: cover;
         padding: 24px;
     }
@@ -279,7 +279,7 @@
 
     /* ---- CREW ---- */
     .crew-body{
-        background: url(/starter-code/assets/crew/background-crew-tablet.jpg);
+        background: url(assets/crew/background-crew-tablet.jpg);
         background-size: cover;
         padding: 24px;
     }
@@ -304,7 +304,7 @@
     /* ----TECHNOLOGY---- */
 
     .technology-body{
-        background: url(/starter-code/assets/technology/background-technology-tablet.jpg);
+        background: url(assets/technology/background-technology-tablet.jpg);
         background-size: cover;
         padding: 24px;
     }
@@ -339,7 +339,7 @@
 }
 @media (max-width: 767px) {
     .destination-body{
-        background: url(./assets/destination/background-destination-mobile.jpg);
+        background: url(assets/destination/background-destination-mobile.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -408,7 +408,7 @@
     }
     /* ---- Crew ---- */
     .crew-body{
-        background: url(./assets/crew/background-crew-mobile.jpg);
+        background: url(assets/crew/background-crew-mobile.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -445,7 +445,7 @@
     }
     /* ----TECHNOLOGY---- */
     .technology-body{
-        background: url(./assets/technology/background-technology-mobile.jpg);
+        background: url(assets/technology/background-technology-mobile.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
